@@ -1,5 +1,12 @@
+"use client";
 import Footer from "./components/Footer"
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Home() {
+  const router = useRouter();
+  const goToAdmissions = () => {
+    router.push('https://admissions.citiedgecollege.co.uk/');
+  }
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation */}
@@ -25,7 +32,7 @@ export default function Home() {
             <a href="#online-learning" className="text-gray-700 dark:text-gray-300 hover:text-[#1e3a8a] dark:hover:text-blue-400 transition font-medium">Online Learning</a>
             <a href="#admissions" className="text-gray-700 dark:text-gray-300 hover:text-[#1e3a8a] dark:hover:text-blue-400 transition font-medium">Admissions</a>
           </div>
-          <button className="px-6 py-2.5 bg-[#1e3a8a] text-white rounded hover:bg-[#1e40af] transition font-medium">
+          <button onClick = {goToAdmissions} className="px-6 py-2.5 bg-[#1e3a8a] text-white rounded hover:bg-[#1e40af] transition font-medium">
             Apply Now
           </button>
         </div>
@@ -48,9 +55,13 @@ export default function Home() {
                 Flexible, accessible, and internationally recognised qualifications designed for working professionals and global learners. Study from anywhere, anytime.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded hover:bg-gray-100 transition shadow-lg">
-                  Browse Programmes
-                </button>
+             
+<Link href="https://citiedgecollege.co.uk/course-lists">
+  <button className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded hover:bg-gray-100 transition shadow-lg">
+    Browse Programmes
+  </button>
+</Link>
+
                 <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded hover:bg-white/10 transition">
                   Download Prospectus
                 </button>
@@ -88,7 +99,7 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   LLB (Bachelor of Laws), LLM (Master of Laws) and specialized legal programmes
                 </p>
-                <a href="#" className="text-[#1e3a8a] dark:text-blue-400 font-semibold hover:underline">
+                <a href="https://citiedgecollege.co.uk/course-lists" className="text-[#1e3a8a] dark:text-blue-400 font-semibold hover:underline">
                   Explore Law Programmes →
                 </a>
               </div>
@@ -104,7 +115,7 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Business Administration, MBA, and leadership-focused degrees
                 </p>
-                <a href="#" className="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">
+                <a href="https://citiedgecollege.co.uk/course-lists" className="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">
                   Explore Business Programmes →
                 </a>
               </div>
@@ -120,7 +131,7 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Computer Science, AI, and cutting-edge technology programmes
                 </p>
-                <a href="#" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
+                <a href="https://citiedgecollege.co.uk/course-lists" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline">
                   Explore Tech Programmes →
                 </a>
               </div>
@@ -136,7 +147,7 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Public Health, Clinical Psychology, and healthcare programmes
                 </p>
-                <a href="#" className="text-red-600 dark:text-red-400 font-semibold hover:underline">
+                <a href="https://citiedgecollege.co.uk/course-lists" className="text-red-600 dark:text-red-400 font-semibold hover:underline">
                   Explore Health Programmes →
                 </a>
               </div>
@@ -152,7 +163,7 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   English Language, Media Studies, and creative disciplines
                 </p>
-                <a href="#" className="text-amber-600 dark:text-amber-400 font-semibold hover:underline">
+                <a href="https://citiedgecollege.co.uk/course-lists" className="text-amber-600 dark:text-amber-400 font-semibold hover:underline">
                   Explore Arts Programmes →
                 </a>
               </div>
@@ -163,9 +174,14 @@ export default function Home() {
                 <p className="mb-6 text-blue-100">
                   From undergraduate to PhD level
                 </p>
-                <button className="px-6 py-3 bg-white text-[#1e3a8a] font-semibold rounded hover:bg-gray-100 transition">
+                
+<Link href="https://citiedgecollege.co.uk/course-lists">
+   <button className="px-6 py-3 bg-white text-[#1e3a8a] font-semibold rounded hover:bg-gray-100 transition">
                   Browse Full Catalogue
                 </button>
+</Link>
+
+               
               </div>
             </div>
           </div>
@@ -411,7 +427,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="text-center md:text-right">
-                  <button className="px-10 py-5 bg-[#1e3a8a] text-white text-xl font-bold rounded-lg hover:bg-[#1e40af] transition shadow-xl">
+                  <button onClick = {goToAdmissions} className="px-10 py-5 bg-[#1e3a8a] text-white text-xl font-bold rounded-lg hover:bg-[#1e40af] transition shadow-xl">
                     Start Application
                   </button>
                   <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
@@ -434,7 +450,7 @@ export default function Home() {
               Transform your career with flexible, internationally recognised education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded-lg hover:bg-gray-100 transition shadow-lg">
+              <button onClick = {goToAdmissions}className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded-lg hover:bg-gray-100 transition shadow-lg">
                 Apply Now
               </button>
               <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white/10 transition">
