@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="font-bold mb-4">Quick Links</h5>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition">Programs</a></li>
-              <li><a href="#" className="hover:text-white transition">Admissions</a></li>
-              <li><a href="#" className="hover:text-white transition">Campus Life</a></li>
+              <li><a href="https://citiedgecollege.co.uk/about" className="hover:text-white transition">About Us</a></li>
+              <li><a href="https://citiedgecollege.co.uk/course-lists" className="hover:text-white transition">Programs</a></li>
+              <li><a href="https://citiedgecollege.co.uk/admissions" className="hover:text-white transition">Admissions</a></li>
+              <li><a href="https://citiedgecollege.co.uk/" className="hover:text-white transition">Campus Life</a></li>
             </ul>
           </div>
 
@@ -39,10 +39,10 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="font-bold mb-4">Resources</h5>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition">Library</a></li>
+              <li><a href="https://moodle.citiedgecollege.co.uk" className="hover:text-white transition">Moodle</a></li>
               <li><a href="#" className="hover:text-white transition">Support Center</a></li>
               <li><a href="#" className="hover:text-white transition">IT Services</a></li>
-              <li><a href="#" className="hover:text-white transition">Career Services</a></li>
+              <li><a href="https://citiedgecollege.co.uk/career" className="hover:text-white transition">Career Services</a></li>
             </ul>
           </div>
 
@@ -54,11 +54,8 @@ const Footer: React.FC = () => {
               <li>Phone/WhatsApp: +44 (0)7454 289604</li>
               <li>
                 Campus Address: 2-16 Bayford Street, E8 3SE <br />
-                <span className="italic">(Proposed for March 2026 Academic Session)</span>
               </li>
-              <li>
-                Registered Address: No.1-2 Craven Road, Ealing, London W5 2UA
-              </li>
+            
             </ul>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Study Online with
                 <br />
-                <span className="text-yellow-300">UK University-Validated</span> Degrees
+                <span className="text-yellow-300">UK University</span> Degrees
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-3xl">
                 Flexible, accessible, and internationally recognised qualifications designed for working professionals and global learners. Study from anywhere, anytime.
@@ -62,9 +62,9 @@ export default function Home() {
   </button>
 </Link>
 
-                <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded hover:bg-white/10 transition">
+                {/* <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded hover:bg-white/10 transition">
                   Download Prospectus
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -446,16 +446,16 @@ export default function Home() {
               Ready to Begin Your Academic Journey?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Join thousands of students worldwide studying with UK university-validated qualifications. 
+              Join thousands of students worldwide studying with UK university qualifications. 
               Transform your career with flexible, internationally recognised education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button onClick = {goToAdmissions}className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded-lg hover:bg-gray-100 transition shadow-lg">
                 Apply Now
               </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white/10 transition">
+              {/* <button className="px-8 py-4 bg-transparent border-2 border-white text-white text-lg font-semibold rounded-lg hover:bg-white/10 transition">
                 Request Information
-              </button>
+              </button> */}
             </div>
           </div>
         </section>
