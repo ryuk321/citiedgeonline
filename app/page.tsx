@@ -7,6 +7,12 @@ export default function Home() {
   const goToAdmissions = () => {
     router.push('https://admissions.citiedgecollege.co.uk/');
   }
+  const goToBrowse = () => {
+  router.push('https://citiedgecollege.co.uk/course-lists');
+};
+
+
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation */}
@@ -57,7 +63,8 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
              
 <Link href="https://citiedgecollege.co.uk/course-lists">
-  <button className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded hover:bg-gray-100 transition shadow-lg">
+  <button  onClick={goToBrowse}
+ className="px-8 py-4 bg-white text-[#1e3a8a] text-lg font-semibold rounded hover:bg-gray-100 transition shadow-lg">
     Browse Programmes
   </button>
 </Link>
