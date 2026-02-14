@@ -40,8 +40,8 @@ const Footer: React.FC = () => {
             <h5 className="font-bold mb-4">Resources</h5>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="https://moodle.citiedgecollege.co.uk" className="hover:text-white transition">Moodle</a></li>
-              <li><a href="#" className="hover:text-white transition">Support Center</a></li>
-              <li><a href="#" className="hover:text-white transition">IT Services</a></li>
+              <li><a href="https://citiedgecollege.co.uk/contact" className="hover:text-white transition">Support Center</a></li>
+              <li><a href="https://citiedgecollege.co.uk/contact" className="hover:text-white transition">IT Services</a></li>
               <li><a href="https://citiedgecollege.co.uk/career" className="hover:text-white transition">Career Services</a></li>
             </ul>
           </div>
