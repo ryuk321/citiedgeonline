@@ -53,9 +53,7 @@ export default function Home() {
                 UK Registered Education Provider • UKPRN 10096469
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Study Online with
-                <br />
-                <span className="text-yellow-300">UK University</span> Degrees
+                Study Online 
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-3xl">
                 Flexible, accessible, and internationally recognised qualifications designed for working professionals and global learners. Study from anywhere, anytime.
