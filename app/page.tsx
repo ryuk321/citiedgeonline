@@ -546,16 +546,7 @@ export default function Home() {
 //         </footer> */}
 //       </main>
 //     </div>
- <div className="flex min-h-screen items-center justify-center bg-gray-100 px-4">
-      <div className="bg-white shadow-md rounded-lg p-8 text-center">
-        <h1 className="text-2xl font-semibold text-gray-800">
-          This page is currently unavailable
-        </h1>
-        <p className="mt-3 text-gray-600">
-          Please try again later or contact support if the issue continues.
-        </p>
-      </div>
-    </div>
+<div className="text-white bg-white"> </div>
 
     
   )}    
